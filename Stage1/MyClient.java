@@ -63,15 +63,15 @@ try {
         str = dis.readLine();
         System.out.println(str);
 
-    // Split the response into an array, extracting the number of CPU cores (corenum) from arr[4]
-    String[] arr = str.split(" ", 9);
-    int coreNum = Integer.parseInt(String.valueOf(arr[4]));
+        // Split the response into an array, extracting the number of CPU cores (corenum) from arr[4]
+        String[] arr = str.split(" ", 9);
+        int coreNum = Integer.parseInt(String.valueOf(arr[4]));
 
-    // if j is smaller than coreNum, update j and large array with the current server informatiuon
-    if(j < coreNum){
-    j = coreNum;
-    large = arr;
-    }
+        // if j is smaller than coreNum, update j and large array with the current server informatiuon
+        if(j < coreNum){
+            j = coreNum;
+            large = arr;
+        }
     }
 
     // send OK command
@@ -91,8 +91,9 @@ try {
     dout.flush();
     dout.close();
     s.close();
-}catch(Exception e)
-    {System.out.println(e);
+}
+catch(Exception e){
+    System.out.println(e);
 }
 }
 }
