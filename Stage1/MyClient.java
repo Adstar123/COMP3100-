@@ -98,4 +98,4 @@ catch(Exception e){
 }
 }
 
-// The code overall schedules 1 job with a server and the server performs the job. It does not perfrom the Largest Round Robin algorithim unforuantely.
+// The code overall schedules 1 job with a server and the server performs the job. It does not perform the Largest Round Robin algorithim correctly.
